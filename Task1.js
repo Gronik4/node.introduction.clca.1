@@ -34,9 +34,10 @@ const argv = yargs(hideBin(process.argv))
     default: day
   })
   .option('add', {
-    default: futureDate(process.argv.slice(3)[0])
+    default: futureDate(process.argv.slice(4)[0])
   })
   .option('sub', {
-    default: lastDate(process.argv.slice(3)[0])
+    default: lastDate(process.argv.slice(4)[0])
   }).argv;
+  
 console.log(argv);
